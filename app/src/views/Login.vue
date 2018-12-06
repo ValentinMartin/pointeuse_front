@@ -4,8 +4,8 @@
         <i class="far fa-user" id="icon_user"></i>
         <div class="content_form">             
             <form id="form_login" method="post" class="flex_container flex_direction_column">
-                <input type="text" name="nom" placeholder="Nom" required="required" class="input_login_non"/>
-                <input type="password" name="mdp" placeholder="Mot de passe" required="required" class="input_login_mdp"/>
+                <input type="text" name="nom" placeholder="Nom" required class="input_login_non"/>
+                <input type="password" name="mdp" placeholder="Mot de passe" required class="input_login_mdp"/>
                 <button type="submit" class="btn_login">Connexion</button>
             </form>
         </div>
@@ -44,7 +44,7 @@ input{
 }
 #logo_login{
     display: block;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 
 }
@@ -85,10 +85,6 @@ input{
     position: relative;
     top: 140px;
 }
-.btn_login{
-    
-}
-
 
 </style>
 
