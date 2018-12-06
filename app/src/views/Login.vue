@@ -23,22 +23,21 @@ export default {
 
 <style>
     /* CSS GENERIQUE */
-body{ 
-    height: 100%;
-    background:#8080800a;
-    margin:0;
-}
-input{
-    text-indent: 5px;
-}
-.flex_container{
-    display:flex;
-}
-.flex_direction_column{
-    flex-direction: column;
-}
-/* FIN CSS GENERIQUE */
-
+    body{
+        background:#8080800a;
+        margin:0;
+    }
+    input{
+        text-indent: 5px;
+    }
+    .flex_container{
+        display:flex;
+    }
+    .flex_direction_column{
+        flex-direction: column;
+    }
+    /* FIN CSS GENERIQUE */
+    ss
 #content{
     width: 100%;
 }
@@ -86,5 +85,89 @@ input{
     top: 140px;
 }
 
+
+ /* MEDIA QUERIES */
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+
+    #logo_login{
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+
+    }
+    .content_form{        
+        margin:5rem auto;
+    }
+    #icon_user{
+        top: 42%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    #logo_login{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+    .content_form{        
+        margin:3rem auto;
+        width: 60%;
+    }
+    #icon_user{
+        top: 39%;
+    }
+
+}
+@media screen and (min-width: 450px) and (max-width: 600px){
+
+    #logo_login{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    .content_form{        
+        margin: 0 auto;
+        width: 80%;
+    }
+    #icon_user{
+        visibility: hidden;
+    }
+    .input_login_non, .input_login_mdp,.btn_login{
+        margin: 20px 40px 0 40px;
+        padding: 5px 0;
+        border: none;
+        border-bottom: 1px solid #8080802e;
+        position: relative;
+        top: 100px;
+    }
+
+}
+@media screen and (max-width: 450px){
+    
+    #logo_login{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    .content_form{        
+        margin: -150px auto;
+        width: 80%;
+    }
+    #icon_user{
+        visibility: hidden;
+    }
+    .input_login_non, .input_login_mdp,.btn_login{
+        margin: 20px 40px 0 40px;
+        padding: 5px 0;
+        border: none;
+        border-bottom: 1px solid #8080802e;
+        position: relative;
+        top: 100px;
+    }
+}
 </style>
 
