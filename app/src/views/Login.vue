@@ -85,12 +85,6 @@ input{
     position: relative;
     top: 140px;
 }
-.input_login_non{
-    
-}
-.input_login_mdp{
-    
-}
 .btn_login{
     
 }
