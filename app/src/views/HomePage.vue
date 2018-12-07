@@ -24,6 +24,23 @@ export default {
 </script>
 
 <style>
+    /* CSS GENERIQUE */
+    body{
+        background:#8080800a;
+        margin:0;
+        Overflow: hidden;
+    }
+    input{
+        text-indent: 5px;
+    }
+    .flex_container{
+        display:flex;
+    }
+    .flex_direction_column{
+        flex-direction: column;
+    }
+    /* FIN CSS GENERIQUE */
+
 /* navigation section */
 
 nav{
@@ -33,6 +50,7 @@ nav{
   margin: 0 auto;
   width: 100%;
   background-color: #fff000c9;
+  border-bottom: 6px solid #fff;
 }
 
 nav ul{
@@ -44,7 +62,6 @@ nav ul li{
   display: inline-block;
   text-align: center;
   padding: 20px;
-  height: 2%;
 }
 
 nav ul li a{
