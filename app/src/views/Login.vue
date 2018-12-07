@@ -26,6 +26,7 @@ export default {
     body{
         background:#8080800a;
         margin:0;
+        Overflow: hidden;
     }
     input{
         text-indent: 5px;
@@ -97,10 +98,11 @@ export default {
 
     }
     .content_form{        
-        margin:5rem auto;
+        margin:-10rem auto;
+        width: 55%;
     }
     #icon_user{
-        top: 42%;
+        top: 27%;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
@@ -153,8 +155,8 @@ export default {
         margin: 0 auto;
 
     }
-    .content_form{        
-        margin: -150px auto;
+    .content_form{ 
+        margin: 0px auto;
         width: 80%;
     }
     #icon_user{
