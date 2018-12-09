@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <HomePage /> -->
     <Login />
   </div>
 </template>
