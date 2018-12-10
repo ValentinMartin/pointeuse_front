@@ -16,8 +16,10 @@
 export default {
     name: "Login",
     props: {
-
     },
+    components: {
+    },
+    created() {},
 }    
 </script>
 

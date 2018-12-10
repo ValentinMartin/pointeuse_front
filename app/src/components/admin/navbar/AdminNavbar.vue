@@ -1,14 +1,15 @@
-<template>    
-    <div id="content">
+
+<template>
+    <div class="content">
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Utilisateurs</a></li>
-                <li><a href="#">Ordres</a></li>
-                <li><a href="#">Carte</a></li>
-                <li><a href="#">Pointage</a></li>
-                <li><a href="#">Compte</a></li>
-                <li><a href="#">Images</a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
             </ul>
         </nav>
     </div>
@@ -16,13 +17,10 @@
 
 <script>
 export default {
-    name: "HomePage",
-    props: {
-
-    },
-}    
+    name:"AdminNavbar",
+    
+}
 </script>
-
 <style>
     /* CSS GENERIQUE */
     body{
@@ -99,5 +97,5 @@ nav ul li a:hover, nav ul li a:active{
     padding: 5px;
   }
 } 
-</style>
 
+</style>
