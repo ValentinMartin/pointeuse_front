@@ -4,23 +4,45 @@
         <i class="far fa-user" id="icon_user"></i>
         <div class="content_form">             
             <form id="form_login" method="post" class="flex_container flex_direction_column">
-                <input type="text" name="nom" placeholder="Nom" required class="input_login_non"/>
-                <input type="password" name="mdp" placeholder="Mot de passe" required class="input_login_mdp"/>
-                <button type="submit" class="btn_login">Connexion</button>
+                <input type="text" name="nom" placeholder="Nom" v-model="input.username" required class="input_login_non"/>
+                <input type="password" name="mdp" placeholder="Mot de passe" v-model="input.password" required class="input_login_mdp"/>
+                <button type="button" class="btn_login" v-on:click="login()">Connexion</button>
             </form>
         </div>
     </div>
 </template>
 
 <script>
-export default {
-    name: "Login",
-    props: {
-    },
-    components: {
-    },
-    created() {},
-}    
+    export default {
+        name: 'Login',
+        data() {
+            return {
+                input: {
+                    username: "",
+                    password: ""
+                }
+            }
+        },
+        methods: {
+            login() {
+                if(this.input.username != "" && this.input.password != "") {
+                    if(this.input.username == this.$parent.adminAccount.username && this.input.password == this.$parent.adminAccount.password) {
+                        this.$emit("authenticated", true);
+                        this.$emit("admin", true);
+                        this.$router.replace({ name: "AdminHome" });
+                    } 
+                    if(this.input.username == this.$parent.userAccount.username && this.input.password == this.$parent.userAccount.password) {
+                        this.$emit("authenticated", true);
+                        this.$emit("admin", false);
+                        this.$router.replace({ name: "UsersHome" });
+                } else {
+                        this.$emit("authenticated", false);
+                        this.$router.replace({ name: "Login" });
+                }
+            }
+        }
+    }
+}     
 </script>
 
 <style>

@@ -1,25 +1,27 @@
-
 <template>
     <div class="content">
         <nav>
             <ul>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
+                <li><a>Accueil</a></li>
+                <li><a>Utilisateurs</a></li>
+                <li><a>Ordres</a></li>
+                <li><a>Carte</a></li>
+                <li><a>Pointage</a></li>
+                <li><a>Compte</a></li>
+                <li><a>Images</a></li>
+                <li><a>Logout</a></li>                
             </ul>
         </nav>
     </div>
 </template>
 
 <script>
-export default {
-    name:"AdminNavbar",
-    
-}
+    export default {
+        name: 'AdminHome',
+        data() {
+            return {};
+        }
+    }
 </script>
 <style>
     /* CSS GENERIQUE */
@@ -64,10 +66,10 @@ nav ul li{
 
 nav ul li a{
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   color: black;
-  padding: 20px;
+  margin: 20px;
 }
 
 /* an underline appears at the bottom on hover of each link */
