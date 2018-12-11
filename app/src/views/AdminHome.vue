@@ -1,5 +1,5 @@
 <template>
-    <div class="content">
+    <div id="content_AdminHome">
         <nav>
             <ul>
                 <li><a>Accueil</a></li>
@@ -9,7 +9,7 @@
                 <li><a>Pointage</a></li>
                 <li><a>Compte</a></li>
                 <li><a>Images</a></li>
-                <li><a v-on:click="logout()" to="/Login">Logout</a></li>                
+                <li><button v-on:click="logout()" to="/Login" class="btn_logOut" id="logOut_Navbar">Déconnexion</button></li>                
             </ul>
         </nav>
     </div>
@@ -43,22 +43,6 @@ export default {
 }
 </script>
 <style>
-    /* CSS GENERIQUE */
-    body{
-        background:#8080800a;
-        margin:0;
-        Overflow: hidden;
-    }
-    input{
-        text-indent: 5px;
-    }
-    .flex_container{
-        display:flex;
-    }
-    .flex_direction_column{
-        flex-direction: column;
-    }
-    /* FIN CSS GENERIQUE */
 
 /* navigation section */
 
@@ -80,7 +64,7 @@ nav ul{
 nav ul li{
   display: inline-block;
   text-align: center;
-  padding: 20px;
+  padding: 17px;
 }
 
 nav ul li a{
@@ -99,7 +83,9 @@ nav ul li a:hover, nav ul li a:active{
   transition: 0.8s; 
 }
 /* end of navigation section*/
-
+#logOut_Navbar{
+    background-color:#fafafa;
+}
  /******* MEDIA QUERIES *******/
 
 @media (max-width: 900px){
