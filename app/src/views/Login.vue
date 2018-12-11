@@ -1,32 +1,67 @@
 <template>    
-    <div id="content">
+    <div id="content_login">
         <img src="../assets/img/logo.png" alt="Modulancy_logo" id="logo_login">
         <i class="far fa-user" id="icon_user"></i>
         <div class="content_form">             
             <form id="form_login" method="post" class="flex_container flex_direction_column">
-                <input type="text" name="nom" placeholder="Nom" required class="input_login_non"/>
-                <input type="password" name="mdp" placeholder="Mot de passe" required class="input_login_mdp"/>
-                <button type="submit" class="btn_login">Connexion</button>
+                <input type="text" name="nom" placeholder="Nom" v-model="input.username" required class="input_login_nom"/>
+                <input type="password" name="mdp" placeholder="Mot de passe" v-model="input.password" required class="input_login_mdp"/>
+                <button type="button" class="btn_login" v-on:click="login()">Connexion</button>
             </form>
         </div>
     </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 export default {
     name: "Home",
     props: {
 
     },
 }    
+=======
+    export default {
+        name: 'Login',
+        data() {
+            return {
+                input: {
+                    username: "",
+                    password: ""
+                }
+            }
+        },
+        methods: {
+            login() {
+                if(this.input.username != "" && this.input.password != "") {
+                    if(this.input.username == this.$parent.adminAccount.username && this.input.password == this.$parent.adminAccount.password) {
+                        this.$emit("authenticated", true);
+                        this.$emit("admin", true);
+                        this.$router.replace({ name: "AdminHome" });
+                    } 
+                    else if(this.input.username == this.$parent.userAccount.username && this.input.password == this.$parent.userAccount.password) {
+                        this.$emit("authenticated", true);
+                        this.$emit("admin", false);
+                        this.$router.replace({ name: "UsersHome" });
+                    } 
+                    else {
+                            this.$emit("authenticated", false);
+                            this.$router.replace({ name: "Login" });
+                    }
+            }
+        }
+    }
+}     
+>>>>>>> origin/master
 </script>
 
 <style>
     /* CSS GENERIQUE */
     body{
         background:#8080800a;
+        font-family: "Gill Sans", sans-serif;
         margin:0;
-        Overflow: hidden;
+        overflow: auto;
     }
     input{
         text-indent: 5px;
@@ -37,9 +72,22 @@ export default {
     .flex_direction_column{
         flex-direction: column;
     }
+    button{
+        cursor: pointer;
+    }
+    .btn_logOut{
+      height: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
+      color: #bb1515;
+      border: 1px solid #bb1515;
+      border-radius: 5px;
+      background: white;
+      font-weight: bolder;
+    }
     /* FIN CSS GENERIQUE */
-    ss
-#content{
+
+#content_login{
     width: 100%;
 }
 #logo_login{
@@ -77,13 +125,18 @@ export default {
     width: 100%;
     height: 100%;
 }
-.input_login_non, .input_login_mdp,.btn_login{
-    margin: 20px 60px 0 60px;
-    padding: 5px 0;
+.input_login_nom, .input_login_mdp,.btn_login{
+    margin: 2rem 5rem 0 5rem;
+    padding: 0.4rem 0;
     border: none;
     border-bottom: 1px solid #8080802e;
     position: relative;
-    top: 140px;
+    top: 85px;
+}
+.btn_login{
+  background: #00c60069;
+  color: #808080;
+  border: none;
 }
 
 
@@ -137,7 +190,7 @@ export default {
     #icon_user{
         visibility: hidden;
     }
-    .input_login_non, .input_login_mdp,.btn_login{
+    .input_login_nom, .input_login_mdp,.btn_login{
         margin: 20px 40px 0 40px;
         padding: 5px 0;
         border: none;
@@ -162,7 +215,7 @@ export default {
     #icon_user{
         visibility: hidden;
     }
-    .input_login_non, .input_login_mdp,.btn_login{
+    .input_login_nom, .input_login_mdp,.btn_login{
         margin: 20px 40px 0 40px;
         padding: 5px 0;
         border: none;
