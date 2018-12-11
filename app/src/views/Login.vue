@@ -52,6 +52,7 @@
         background:#8080800a;
         font-family: "Gill Sans", sans-serif;
         margin:0;
+        overflow: auto;
     }
     input{
         text-indent: 5px;
@@ -116,12 +117,17 @@
     height: 100%;
 }
 .input_login_nom, .input_login_mdp,.btn_login{
-    margin: 20px 60px 0 60px;
-    padding: 5px 0;
+    margin: 2rem 5rem 0 5rem;
+    padding: 0.4rem 0;
     border: none;
     border-bottom: 1px solid #8080802e;
     position: relative;
-    top: 140px;
+    top: 85px;
+}
+.btn_login{
+  background: #00c60069;
+  color: #808080;
+  border: none;
 }
 
 

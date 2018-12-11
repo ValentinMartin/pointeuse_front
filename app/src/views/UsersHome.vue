@@ -48,15 +48,15 @@ export default {
 }
 #logo_home_user{
     display: block;
-    width: 30%;
-    height: 120px;
+    width: 50%;
+    height: 150px;
 }
 #logOutUser{  
-    margin-top: 35px;
-    margin-right: 80px;
+    margin-top: 3rem;
+    margin-right: 6rem;
 }
 #content_body h2{
-    margin:50px auto; 
+    margin:4rem auto; 
     width: auto; 
 
 }
@@ -66,19 +66,20 @@ export default {
     background: white;
     border: 1px solid #8080802b;
     border-radius: 3px;
-    padding: 20px 20px;
+    padding: 1rem 1rem;
+    margin-bottom: 5rem;
 }
 #content_input_btn input{
     width: 80%;
-    margin: 10px auto;
-    padding: 5px 0;
+    margin: 1rem auto;
+    padding: 0.5rem 0;
     border: none;
     border-bottom: 1px solid #8080802e;
 }
 #btn_pointer,#btn_deplacer{
   width: 60%;
-  margin: 10px auto;
-  padding: 5px 0;
+  margin: 1rem auto;
+  padding: 0.5rem 0;
   border: none;
   border-radius: 3px;
 }
