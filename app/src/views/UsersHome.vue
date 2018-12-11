@@ -2,7 +2,7 @@
   <div id="content">
     <p>Utilisateurs Home</p>    
     <br />
-    <button v-on:click.native="logout()">Logout</button>
+    <button v-on:click="logout()" to="/Login">Logout</button>
   </div>
 </template>
 
@@ -11,10 +11,11 @@ export default {
   name: 'UsersHome',
   components: {
   },
-  methods:{
-      logout() {
-        this.authenticated = false;
-      },
+    methods : {
+        logout(){
+            this.authenticated = false;
+            this.$router.replace({ name: "Login" });
+      }
   }
 }
 </script>

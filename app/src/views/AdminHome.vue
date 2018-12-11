@@ -9,20 +9,38 @@
                 <li><a>Pointage</a></li>
                 <li><a>Compte</a></li>
                 <li><a>Images</a></li>
-                <li><a>Logout</a></li>                
+                <li><a v-on:click="logout()" to="/Login">Logout</a></li>                
             </ul>
         </nav>
-       <router-view />
     </div>
 </template>
 
 <script>
-    export default {
-        name: 'AdminHome',
+// import AdminAccueil from "../components/accueil/AdminAccueil.vue"
+// import AdminUtilisateurs from "../components/utilisateurs/AdminUtilisateurs.vue"
+// import AdminOrdres from "../components/ordres/AdminOrdres.vue"
+// import AdminCarte from "../components/carte/AdminCarte.vue"
+// import AdminPointage from "../components/pointage/AdminPointage.vue"
+// import AdminCompte from "../components/compte/AdminCompte.vue"
+// import AdminImages from "../components/images/AdminImages.vue"
+
+
+export default {
+    name: 'AdminHome',
         data() {
-            return {};
+            return {
+                authenticated : true,
+            };
+        },
+    components: {
+    },
+    methods : {
+        logout(){
+            this.authenticated = false;
+            this.$router.replace({ name: "Login" });
         }
     }
+}
 </script>
 <style>
     /* CSS GENERIQUE */
@@ -71,6 +89,7 @@ nav ul li a{
   font-weight: bold;
   color: black;
   margin: 20px;
+  cursor: pointer;
 }
 
 /* an underline appears at the bottom on hover of each link */
