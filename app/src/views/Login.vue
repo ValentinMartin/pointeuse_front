@@ -13,51 +13,46 @@
 </template>
 
 <script>
-<<<<<<< HEAD
 export default {
-    name: "Home",
-    props: {
-
-    },
-}    
-=======
-    export default {
-        name: 'Login',
-        data() {
-            return {
-                input: {
-                    username: "",
-                    password: ""
-                }
+    name: 'Login',
+    data() {
+        return {
+            input: {
+                username: "",
+                password: ""
             }
-        },
-        methods: {
-            login() {
-                if(this.input.username != "" && this.input.password != "") {
-                    if(this.input.username == this.$parent.adminAccount.username && this.input.password == this.$parent.adminAccount.password) {
-                        this.$emit("authenticated", true);
-                        this.$emit("admin", true);
-                        this.$router.replace({ name: "AdminHome" });
-                    } 
-                    else if(this.input.username == this.$parent.userAccount.username && this.input.password == this.$parent.userAccount.password) {
-                        this.$emit("authenticated", true);
-                        this.$emit("admin", false);
-                        this.$router.replace({ name: "UsersHome" });
-                    } 
-                    else {
-                            this.$emit("authenticated", false);
-                            this.$router.replace({ name: "Login" });
-                    }
+        }
+    },
+    components: {
+        
+    },
+    methods: {
+        login() {
+            if(this.input.username != "" && this.input.password != "")
+            {
+                if(this.input.username == this.$parent.adminAccount.username && this.input.password == this.$parent.adminAccount.password) {
+                    this.$emit("authenticated", true);
+                    this.$emit("admin", true);
+                    this.$router.replace({ name: "AdminHome" });
+                } 
+                else if(this.input.username == this.$parent.userAccount.username && this.input.password == this.$parent.userAccount.password) {
+                    this.$emit("authenticated", true);
+                    this.$emit("admin", false);
+                    this.$router.replace({ name: "UsersHome" });
+                } 
+                else {
+                        this.$emit("authenticated", false);
+                        this.$router.replace({ name: "Login" });
+                }
             }
         }
     }
 }     
->>>>>>> origin/master
 </script>
 
 <style>
     /* CSS GENERIQUE */
-    body{
+    body{S
         background:#8080800a;
         font-family: "Gill Sans", sans-serif;
         margin:0;

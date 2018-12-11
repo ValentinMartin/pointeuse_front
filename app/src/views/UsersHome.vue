@@ -28,12 +28,20 @@ export default {
             }
         },
   components: {
+    
   },
-    methods : {
-        logout(){
-            this.authenticated = false;
-            this.$router.replace({ name: "Login" });
+  methods : {
+      logout(){
+          this.authenticated = false;
+          this.$router.replace({ name: "Login" });
+      },
+      pointer(){
+        // code
+      },
+      deplacer(){
+        // code
       }
+    
   }
 }
 </script>
@@ -77,19 +85,20 @@ export default {
     border-bottom: 1px solid #8080802e;
 }
 #btn_pointer,#btn_deplacer{
-  width: 60%;
-  margin: 1rem auto;
-  padding: 0.5rem 0;
-  border: none;
-  border-radius: 3px;
+    width: 60%;
+    margin: 1rem auto;
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 3px;  
+    color: #fafafa;
+    font-weight: bolder;
+    font-size: 15px;
 }
 #btn_pointer{
   background: #00c60069;
-  color: #808080;
 }
 #btn_deplacer{
   background: #0000ff82;
-  color: #808080;
 }
 
 /******* MEDIA QUERIES *******/

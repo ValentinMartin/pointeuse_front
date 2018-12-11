@@ -1,19 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <div id="app">
-    <Login />
-  </div>
-</template>
-
-<script>
-import Login from './views/Login.vue'
-
-export default {
-  name: 'app',
-  components: {
-    Login
-  }
-=======
     <div id="app">
         <div id="nav">
             <router-link v-if="authenticated == true && admin == true" to="/AdminHome"></router-link>
@@ -53,7 +38,6 @@ export default {
                 this.authenticated = false;
             }
         }
->>>>>>> origin/master
 }
 </script>
 
