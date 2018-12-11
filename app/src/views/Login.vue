@@ -31,14 +31,15 @@
                         this.$emit("admin", true);
                         this.$router.replace({ name: "AdminHome" });
                     } 
-                    if(this.input.username == this.$parent.userAccount.username && this.input.password == this.$parent.userAccount.password) {
+                    else if(this.input.username == this.$parent.userAccount.username && this.input.password == this.$parent.userAccount.password) {
                         this.$emit("authenticated", true);
                         this.$emit("admin", false);
                         this.$router.replace({ name: "UsersHome" });
-                } else {
-                        this.$emit("authenticated", false);
-                        this.$router.replace({ name: "Login" });
-                }
+                    } 
+                    else {
+                            this.$emit("authenticated", false);
+                            this.$router.replace({ name: "Login" });
+                    }
             }
         }
     }

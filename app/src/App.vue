@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <div id="nav">
-            <router-link v-if="authenticated & admin" to="/AdminHome"></router-link>
+            <router-link v-if="authenticated == true && admin == true" to="/AdminHome"></router-link>
             <router-link v-else to="/UsersHome"></router-link>
         </div>
         <router-view @authenticated="setAuthenticated" />
