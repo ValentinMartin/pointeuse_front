@@ -1,6 +1,6 @@
 <template>
   <div id="content">
-    <p>Carte</p>
+    <p>Admin Carte</p>
   </div>
 </template>
 

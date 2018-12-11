@@ -12,6 +12,7 @@
                 <li><a>Logout</a></li>                
             </ul>
         </nav>
+       <router-view />
     </div>
 </template>
 

@@ -1,6 +1,8 @@
 <template>
   <div id="content">
-    <p>Utilisateurs</p>
+    <p>Utilisateurs Home</p>    
+    <br />
+    <button v-on:click.native="logout()">Logout</button>
   </div>
 </template>
 
@@ -8,6 +10,11 @@
 export default {
   name: 'UsersHome',
   components: {
+  },
+  methods:{
+      logout() {
+        this.authenticated = false;
+      },
   }
 }
 </script>

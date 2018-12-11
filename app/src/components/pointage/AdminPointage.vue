@@ -1,6 +1,6 @@
 <template>
   <div id="content">
-    <p>Pointage</p>
+    <p>Admin Pointage</p>
   </div>
 </template>
 

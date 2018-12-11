@@ -1,6 +1,6 @@
 <template>
   <div id="content">
-    <p>Utilisateurs</p>
+    <p>Admin Utilisateurs</p>
   </div>
 </template>
 

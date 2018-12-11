@@ -1,6 +1,6 @@
 <template>
   <div id="content">
-    <p>Compte</p>
+    <p>Admin Compte</p>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div id="content">
-    <p>Ordres</p>
+    <p>Admin Ordres</p>
   </div>
 </template>
 

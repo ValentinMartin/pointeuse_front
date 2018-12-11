@@ -1,6 +1,6 @@
 <template>
   <div id="content">
-    <p>Images</p>
+    <p>Admin Images</p>
   </div>
 </template>
 
