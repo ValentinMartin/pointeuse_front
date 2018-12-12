@@ -1,5 +1,5 @@
 <template>
-    <div id="content_head" class="flex_container">
+    <div id="content_UserHome_Head" class="flex_container">
         <img src="../../assets/img/logo.png" alt="Modulancy_logo" id="logo_home_user">      
         <button v-on:click="logout()" to="/Login" class="btn_logOut" id="logOutUser">Se déconnecter</button>
     </div>
@@ -15,8 +15,7 @@ export default {
     components: {
       
     },
-    methods : {
-        
+    methods : {        
         logout(){
             this.authenticated = false;
             this.$router.replace({ name: "Login" });
@@ -26,7 +25,7 @@ export default {
 </script>
 
 <style>
-#content_head{
+#content_UserHome_Head{
   justify-content: space-between;
 }
 #logo_home_user{
@@ -42,18 +41,21 @@ export default {
 
 @media (max-width: 900px){
   #logo_home_user{
-    width: 45%;
+    width: 60%;
+  }
+  #logOutUser{
+    margin: 3rem auto;
   }
 }
 @media (max-width: 450px){
-  #content_head {
+  #content_UserHome_Head {
     flex-direction: column;
   }
   #logo_home_user{
     width: 100%;
   }
   #logOutUser{
-    width: 80%;
+    width: 60%;
     margin:1rem auto;
   }
 } 

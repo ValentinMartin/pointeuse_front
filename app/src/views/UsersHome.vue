@@ -2,9 +2,9 @@
   <div id="content_UsersHome">
       <UsersHomeHead />
       <UsersHomePointeur />
-      <!-- <UsersHomeResume />
+      <UsersHomeResume />
       <UsersHomeImages />
-      <UsersHomeDepointage /> -->
+      <UsersHomeDepointage />
   </div>
 </template>
 
@@ -16,11 +16,11 @@ export default {
             }
         },
     components: {
-       UsersHomeHead: () => import("../components/users/UsersHomeHead.vue"),
-       UsersHomePointeur: () => import("../components/users/UsersHomePointeur.vue"),
-      //  UsersHomeResume: () => import("../components/users/UsersHomeResume.vue"),
-      //  UsersHomeImages: () => import("../components/users/UsersHomeImages.vue"),
-      //  UsersHomeDepointage: () => import("../components/users/UsersHomeDepointage.vue"),
+        UsersHomeHead: () => import("../components/users/UsersHomeHead.vue"),
+        UsersHomePointeur: () => import("../components/users/UsersHomePointeur.vue"),
+        UsersHomeResume: () => import("../components/users/UsersHomeResume.vue"),
+        UsersHomeImages: () => import("../components/users/UsersHomeImages.vue"),
+        UsersHomeDepointage: () => import("../components/users/UsersHomeDepointage.vue"),
     },
     methods : {
     }

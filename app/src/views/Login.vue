@@ -127,7 +127,10 @@
 .btn_login{
   background: #00c60069;
   color: #808080;
-  border: none;
+  border: none;  
+  font-weight: bolder;
+  font-size: 15px;  
+
 }
 
 

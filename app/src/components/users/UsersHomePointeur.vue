@@ -1,5 +1,5 @@
 <template>
-    <div class="flex_container flex_direction_column" id="content_body">
+    <div class="flex_container flex_direction_column" id="content_UserHome_Pointeur">
         <h2>POINTEUSE</h2>
         <div id="content_input_btn" class="flex_container flex_direction_column">
             <input type="text" name="numOrdre" placeholder="Numéro d'ordre" v-model="input.numOrdre" required class="input_numOrdre"/>
@@ -36,7 +36,7 @@ export default {
 </script>
 
 <style>
-#content_body h2{
+#content_UserHome_Pointeur h2{
     margin:4rem auto; 
     width: auto; 
 
@@ -63,25 +63,30 @@ export default {
   padding: 0.5rem 0;
   border: none;
   border-radius: 3px;
+  font-weight: bolder;
+  font-size: 15px;  
+  color: #808080;
 }
 #btn_pointer{
   background: #00c60069;
-  color: #808080;
 }
 #btn_deplacer{
   background: #0000ff82;
-  color: #808080;
 }
+@media (max-width: 900px){
+    #content_input_btn{
+        width: 60%;
+    }  
+} 
 @media (max-width: 450px){
-  #content_body h2{
-    margin: 20px auto;
+  #content_UserHome_Pointeur h2{
+    margin: 2rem auto;
   }
   #content_input_btn {
     width: 80%;
   }
+  #content_input_btn{
+      margin-bottom: 2rem;
+  }
 } 
-
-
-
-
 </style>
