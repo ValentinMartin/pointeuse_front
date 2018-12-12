@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <div id="nav">
+        <div>
             <router-link v-if="authenticated == true && admin == true" to="/AdminHome"></router-link>
             <router-link v-else to="/UsersHome"></router-link>
         </div>
