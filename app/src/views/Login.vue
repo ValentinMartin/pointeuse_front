@@ -1,8 +1,8 @@
 <template>    
-    <div id="content_login">
-        <img src="../assets/img/logo.png" alt="Modulancy_logo" id="logo_login">
-        <i class="far fa-user" id="icon_user"></i>
-        <div class="content_form">             
+    <div id="content_login" class="flex_container flex_direction_column">
+        <img src="../assets/img/logo.png" alt="Modulancy_logo" id="logo_login">        
+        <div class="content_form">
+            <i class="far fa-user" id="icon_user"></i>             
             <form id="form_login" method="post" class="flex_container flex_direction_column">
                 <input type="text" name="nom" placeholder="Nom" v-model="input.username" required class="input_login_nom"/>
                 <input type="password" name="mdp" placeholder="Mot de passe" v-model="input.password" required class="input_login_mdp"/>
@@ -52,11 +52,10 @@ export default {
 
 <style>
     /* CSS GENERIQUE */
-    body{S
+    body{
         background:#8080800a;
         font-family: "Gill Sans", sans-serif;
         margin:0;
-        overflow: auto;
     }
     input{
         text-indent: 5px;
@@ -86,22 +85,17 @@ export default {
     width: 100%;
 }
 #logo_login{
-    display: block;
-    width: 50%;
+    width: 60%;
+    height: auto;
     margin: 0 auto;
-
 }
 .content_form{
     width:40%;
-    height: 300px;
-    margin:10rem auto;
+    height: auto;
+    margin: 5rem auto;
     background: white;
     border: 1px solid #8080802e;
     border-radius: 5px;    
-    position: absolute; /* postulat de départ */
-    top: 50%; left: 50%; /* à 50%/50% du parent référent */
-    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-    z-index: 1;
 }
 #icon_user{
     border: 1px solid #8080802e;
@@ -109,54 +103,35 @@ export default {
     padding: 2rem;
     color: #00000080;
     background-color: white;
-    font-size: 3em;    
-    z-index: 2;
-    position: absolute; /* postulat de départ */
-    top: 51%; left: 50%; /* à 50%/50% du parent référent */
-    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+    font-size: 3em;
+    position: relative;
+    top: -3rem;
+    left: 11rem;   
 
 }
 #form_login{
     width: 100%;
     height: 100%;
+    margin-bottom: 2rem;
 }
 .input_login_nom, .input_login_mdp,.btn_login{
     margin: 2rem 5rem 0 5rem;
     padding: 0.4rem 0;
     border: none;
     border-bottom: 1px solid #8080802e;
-    position: relative;
-    top: 85px;
 }
 .btn_login{
   background: #00c60069;
   color: #808080;
-  border: none;
+  border: none;  
+  font-weight: bolder;
+  font-size: 15px;  
 }
-
 
  /* MEDIA QUERIES */
-
-@media screen and (min-width: 900px) and (max-width: 1200px) {
-
-    #logo_login{
-        display: block;
-        width: 70%;
-        margin: 0 auto;
-
-    }
-    .content_form{        
-        margin:-10rem auto;
-        width: 55%;
-    }
-    #icon_user{
-        top: 27%;
-    }
-}
 @media screen and (min-width: 600px) and (max-width: 900px) {
 
     #logo_login{
-        display: block;
         width: 80%;
         margin: 0 auto;
 
@@ -165,15 +140,11 @@ export default {
         margin:3rem auto;
         width: 60%;
     }
-    #icon_user{
-        top: 39%;
-    }
 
 }
 @media screen and (min-width: 450px) and (max-width: 600px){
 
     #logo_login{
-        display: block;
         width: 100%;
         margin: 0 auto;
 
@@ -190,15 +161,12 @@ export default {
         padding: 5px 0;
         border: none;
         border-bottom: 1px solid #8080802e;
-        position: relative;
-        top: 100px;
     }
 
 }
 @media screen and (max-width: 450px){
     
     #logo_login{
-        display: block;
         width: 100%;
         margin: 0 auto;
 
@@ -215,8 +183,6 @@ export default {
         padding: 5px 0;
         border: none;
         border-bottom: 1px solid #8080802e;
-        position: relative;
-        top: 100px;
     }
 }
 </style>
