@@ -1,7 +1,6 @@
 <template>
   <div id="content">
     <navBar />
-    <p>Admin Compte</p>
     <AdminCompteCreation />
     <AdminCompteSuppression />
   </div>

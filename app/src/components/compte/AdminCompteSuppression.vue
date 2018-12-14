@@ -1,5 +1,5 @@
 <template>
-  <div id="content">
+  <div id="content_AdminCompte_Suppression">
 
     <p>Admin Compte Suppression</p>
 

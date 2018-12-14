@@ -1,9 +1,6 @@
 <template>
     <div id="content_AdminHome" class="flex_container flex_direction_column">
-        <NavBar />
-        <div id="content_AdminHome_body">
-            <router-view></router-view>
-        </div>
+        <AdminAccueil />
     </div>
 </template>
 
@@ -16,7 +13,7 @@ export default {
             };
         },
     components: {
-        NavBar: () => import("../components/navbar/navBar.vue"),
+        AdminAccueil: () => import("../components/accueil/AdminAccueil.vue")
     },
     methods : {
         

@@ -1,7 +1,6 @@
 <template>
-  <div id="content">
-
-    <p>Admin Compte CREATION</p>
+  <div id="content_AdminCompte_Creation">
+    <h2>Créer un compte</h2>
 
   </div>
 </template>
