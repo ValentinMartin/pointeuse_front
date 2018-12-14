@@ -13,33 +13,37 @@
 </template>
 
 <script>
-    export default {
-        name: 'Login',
-        data() {
-            return {
-                input: {
-                    username: "",
-                    password: ""
-                }
+export default {
+    name: 'Login',
+    data() {
+        return {
+            input: {
+                username: "",
+                password: ""
             }
-        },
-        methods: {
-            login() {
-                if(this.input.username != "" && this.input.password != "") {
-                    if(this.input.username == this.$parent.adminAccount.username && this.input.password == this.$parent.adminAccount.password) {
-                        this.$emit("authenticated", true);
-                        this.$emit("admin", true);
-                        this.$router.replace({ name: "AdminHome" });
-                    } 
-                    else if(this.input.username == this.$parent.userAccount.username && this.input.password == this.$parent.userAccount.password) {
-                        this.$emit("authenticated", true);
-                        this.$emit("admin", false);
-                        this.$router.replace({ name: "UsersHome" });
-                    } 
-                    else {
-                            this.$emit("authenticated", false);
-                            this.$router.replace({ name: "Login" });
-                    }
+        }
+    },
+    components: {
+        
+    },
+    methods: {
+        login() {
+            if(this.input.username != "" && this.input.password != "")
+            {
+                if(this.input.username == this.$parent.adminAccount.username && this.input.password == this.$parent.adminAccount.password) {
+                    this.$emit("authenticated", true);
+                    this.$emit("admin", true);
+                    this.$router.replace({ name: "AdminHome" });
+                } 
+                else if(this.input.username == this.$parent.userAccount.username && this.input.password == this.$parent.userAccount.password) {
+                    this.$emit("authenticated", true);
+                    this.$emit("admin", false);
+                    this.$router.replace({ name: "UsersHome" });
+                } 
+                else {
+                        this.$emit("authenticated", false);
+                        this.$router.replace({ name: "Login" });
+                }
             }
         }
     }
