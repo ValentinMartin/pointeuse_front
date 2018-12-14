@@ -11,7 +11,7 @@
                 <p>Heure Pointage : <span>{{heurePointage}}</span></p>
             </div>
             <hr>
-            <h3>Nom User : <span>{{nomUser}}</span></h3>
+            <h3>Nom Employé : <span>{{nomUser}}</span></h3>
         </div>
     </div>
 </template>
@@ -22,9 +22,9 @@ export default {
             return {
                 nomChantier : "nomChantierTest",
                 numDevis : "123Test",
-                datePointage : "12/12/2018",
-                heurePointage : "10:36",
-                nomUser : "userMoka"
+                datePointage : "14/12/2018",
+                heurePointage : "16:51",
+                nomUser : "userTest"
             }
         },
     components: {
