@@ -1,7 +1,9 @@
 <template>
   <div id="content">
     <navBar />
-    <p>Admin Carte</p>
+    <p>Carte des Pointages</p>
+
+    <AdminCarteMap />
   </div>
 </template>
 
@@ -12,6 +14,7 @@ export default {
   name: 'AdminCarte',
   components: {
     navBar: () => import("../navbar/navBar.vue"),
+    AdminCarteMap: () => import("../carte/AdminCarteMap.vue")
   }
 }
 </script>

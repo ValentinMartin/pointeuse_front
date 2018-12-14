@@ -2,6 +2,7 @@
   <div id="content">
     <navBar />
     <p>Admin Pointage</p>
+    <AdminPointageFormulaire />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ export default {
   name: 'AdminPointage',
   components: {
     navBar: () => import("../navbar/navBar.vue"),
+    AdminPointageFormulaire: () => import("../pointage/AdminPointageFormulaire.vue")
   }
 }
 </script>

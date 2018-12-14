@@ -2,9 +2,9 @@
   <div id="content_UsersHome">
       <UsersHomeHead />
       <UsersHomePointeur />
-            <UsersHomeResume /> <!-- A afficher uniquement apres pointage -->
-            <UsersHomeImages /> <!-- A afficher uniquement apres pointage -->
-            <UsersHomeDepointage /> <!-- A afficher uniquement apres pointage -->
+        <UsersHomeResume /> <!-- A afficher uniquement apres pointage -->
+        <UsersHomeImages /> <!-- A afficher uniquement apres pointage -->
+        <UsersHomeDepointage /> <!-- A afficher uniquement apres pointage -->
   </div>
 </template>
 

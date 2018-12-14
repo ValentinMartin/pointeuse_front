@@ -2,6 +2,7 @@
   <div id="content">
     <navBar />
     <p>Admin Ordres</p>
+    <AdminOrdresTab />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ export default {
   name: 'AdminOrdres',
   components: {
     navBar: () => import("../navbar/navBar.vue"),
+    AdminOrdresTab: () => import("../ordres/AdminOrdresTab.vue")
   }
 }
 </script>
