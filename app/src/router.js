@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Login from "./views/Login.vue"
 import AdminHome from "./views/AdminHome.vue"
 import UsersHome from "./views/UsersHome.vue"
-
+import NavBar from "./components/navbar/navBar.vue"
 import AdminAccueil from "./components/accueil/AdminAccueil.vue"
 import AdminUtilisateurs from "./components/utilisateurs/AdminUtilisateurs.vue"
 import AdminOrdres from "./components/ordres/AdminOrdres.vue"
@@ -31,6 +31,11 @@ export default new Router({
             path: "/AdminHome",
             name: "AdminHome",
             component: AdminHome
+        },
+        {
+            path: "/NavBar",
+            name: "NavBar",
+            component: NavBar
         },
         {
             path: "/AdminAccueil",

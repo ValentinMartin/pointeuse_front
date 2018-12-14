@@ -1,5 +1,6 @@
 <template>
   <div id="content">
+    <navBar />
     <p>Accueil</p>
   </div>
 </template>
@@ -10,7 +11,7 @@
 export default {
   name: 'AdminAccueil',
   components: {
-    
+    navBar: () => import("../navbar/navBar.vue"),
   }
 }
 </script>

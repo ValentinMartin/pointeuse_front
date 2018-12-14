@@ -161,11 +161,12 @@
 
 }
 @media screen and (max-width: 450px){
-    
+    body{
+        font-size: .98em;
+    }
     #logo_login{
         width: 100%;
         margin: 0 auto;
-
     }
     .content_form{ 
         margin: 0px auto;
