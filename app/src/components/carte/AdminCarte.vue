@@ -1,8 +1,7 @@
 <template>
-  <div id="content">
+  <div id="content_adminCarte">
     <navBar />
-    <p>Carte des Pointages</p>
-
+    <h2>Carte des pointages</h2>    
     <AdminCarteMap />
   </div>
 </template>
@@ -20,5 +19,11 @@ export default {
 </script>
 
 <style>
-
+#content_adminCarte{
+  width:100%;
+}
+#content_adminCarte h2{
+  margin: 3rem auto;
+  text-align: center;
+}
 </style>

@@ -2,7 +2,7 @@
   <div id="content_AdminCompte_Suppression" class="flex_container flex_direction_column">
     <h2>Supprimer un compte</h2>
     <select name="employee">
-      <option>empty selection</option>
+      <option>--</option>
       <option :key="item.emp" v-for="item in employee"> {{item.emp}} </option>
     </select>  
     <button type="button" v-on:click="deleteCompte()">Supprimer un compte</button>
@@ -16,15 +16,7 @@ export default {
   name: 'AdminCompteSuppression',
     data() {
         return {
-            employee: [
-                {emp: 'JHE'},
-                {emp: 'AZU'},
-                {emp: 'RGA'},
-                {emp: 'FTH'},
-                {emp: 'DPA'},
-                {emp: 'SMA'},
-                {emp: 'LGU'}
-            ]
+            employee: [{emp: 'JHE'},{emp: 'AZU'},{emp: 'RGA'},{emp: 'FTH'},{emp: 'DPA'},{emp: 'SMA'},{emp: 'LGU'}],  
         }
     },
   components: {

@@ -1,7 +1,6 @@
 <template>
   <div id="content">
     <navBar />
-    <p>Admin Pointage</p>
     <AdminPointageFormulaire />
   </div>
 </template>

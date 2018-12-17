@@ -59,6 +59,10 @@ export default {
     }
     input{
         text-indent: 5px;
+        margin: 2rem 5rem 0 5rem;
+        padding: 0.4rem 0;
+        border: none;
+        border-bottom: 1px solid #8080802e;
     }
     .flex_container{
         display:flex;
