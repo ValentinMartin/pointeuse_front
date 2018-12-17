@@ -4,7 +4,7 @@
             <router-link v-if="authenticated == true && admin == true" to="/AdminHome"></router-link>
             <router-link v-else to="/UsersHome"></router-link>
         </div>
-        <router-view @authenticated="setAuthenticated" />
+        <router-view @authenticated="setAuthenticated"></router-view>
     </div>
 </template>
 

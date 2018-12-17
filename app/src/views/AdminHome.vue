@@ -1,5 +1,5 @@
 <template>
-    <div id="content_AdminHome" class="flex_container flex_direction_column">
+    <div>
         <AdminAccueil />
     </div>
 </template>

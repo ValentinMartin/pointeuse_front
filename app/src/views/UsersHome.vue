@@ -1,7 +1,7 @@
 <template>
   <div id="content_UsersHome">
-      <UsersHomeHead />
-      <UsersHomePointeur />
+        <UsersHomeHead />
+        <UsersHomePointeur />
         <UsersHomeResume /> <!-- A afficher uniquement apres pointage -->
         <UsersHomeImages /> <!-- A afficher uniquement apres pointage -->
         <UsersHomeDepointage /> <!-- A afficher uniquement apres pointage -->

@@ -79,6 +79,9 @@ export default {
       background: white;
       font-weight: bolder;
     }
+    *:focus {
+    outline: none;
+}
     /* FIN CSS GENERIQUE */
 
 #content_login{
@@ -88,6 +91,8 @@ export default {
     width: 60%;
     height: auto;
     margin: 0 auto;
+    border : 5px solid white;
+    border-top: none;
 }
 .content_form{
     width:40%;
@@ -121,11 +126,14 @@ export default {
     border-bottom: 1px solid #8080802e;
 }
 .btn_login{
-  background: #00c60069;
-  color: #808080;
-  border: none;  
-  font-weight: bolder;
-  font-size: 15px;  
+    color: white;
+    border: none;
+    background-color: #2ecc71;
+    border-bottom: 5px solid #27ae60;
+    border-radius: 5px;
+    text-shadow: 0px -2px #27ae60;  
+    font-weight: bolder;
+    font-size: 15px;  
 }
 
  /* MEDIA QUERIES */
