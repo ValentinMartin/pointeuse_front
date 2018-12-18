@@ -44,6 +44,6 @@ export default {
     border-radius: 5px;
     text-shadow: 0px -1px #27ae60;  
     font-weight: bolder;
-    font-size: 15px; 
+    font-size: 15px;
 }
 </style>

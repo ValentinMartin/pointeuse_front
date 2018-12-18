@@ -25,7 +25,8 @@ export default {
 }
 #btn_adminExportAll{
   width: 30%;
-  margin: 1em auto;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
   color: white;
   padding: 5px 5px;
   border: 1px solid #271dca;

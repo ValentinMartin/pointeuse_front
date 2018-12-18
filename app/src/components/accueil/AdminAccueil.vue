@@ -1,8 +1,9 @@
 <template>
-  <div id="content">
+  <div id="content_adminAccueil">
     <navBar />
     <AdminAccueilHead />
-    <AdminAccueilTab />
+    <AdminAccueilTabHead />
+    <AdminAccueilTabContent />
   </div>
 </template>
 
@@ -14,7 +15,8 @@ export default {
   components: {
     navBar: () => import("../navbar/navBar.vue"),
     AdminAccueilHead: () => import("../accueil/AdminAccueilHead.vue"),
-    AdminAccueilTab: () => import("../accueil/AdminAccueilTab.vue"),
+    AdminAccueilTabHead: () => import("../accueil/AdminAccueilTabHead.vue"),    
+    AdminAccueilTabContent: () => import("../accueil/AdminAccueilTabContent.vue"),
   }
 }
 </script>
