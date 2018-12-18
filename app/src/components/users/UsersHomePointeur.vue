@@ -19,7 +19,7 @@ export default {
                     numOrdre: "",
                     idChantier: ""
                 }                
-                }
+            }
         },
     components: {
       
@@ -59,19 +59,29 @@ export default {
 }
 #btn_pointer,#btn_deplacer{
   width: 60%;
-  margin: 1rem auto;
-  padding: 0.5rem 0;
-  border: none;
-  border-radius: 3px;
-  font-weight: bolder;
-  font-size: 15px;  
-  color: #808080;
+
 }
 #btn_pointer{
-  background: #00c60069;
+    margin: 1em auto;
+    color: white;
+    padding: 5px 5px;
+    border: 1px solid #2ecc71;
+    background-color: #2ecc71;
+    border-radius: 5px;
+    text-shadow: 0px -1px #27ae60;  
+    font-weight: bolder;
+    font-size: 15px; 
 }
 #btn_deplacer{
-  background: #0000ff82;
+    margin: 1em auto;
+    color: white;
+    padding: 5px 5px;
+    border: 1px solid #271dca;
+    background-color: #271dca;
+    border-radius: 5px;
+    text-shadow: 0px -1px #1d1596;
+    font-weight: bolder;
+    font-size: 15px; 
 }
 @media (max-width: 900px){
     #content_input_btn{

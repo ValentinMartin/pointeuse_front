@@ -1,8 +1,7 @@
 <template>
   <div id="content">
     <navBar />
-    <p>Accueil</p>
-    <button>exporter tous les chantiers</button>
+    <AdminAccueilHead />
     <AdminAccueilTab />
   </div>
 </template>
@@ -14,6 +13,7 @@ export default {
   name: 'AdminAccueil',
   components: {
     navBar: () => import("../navbar/navBar.vue"),
+    AdminAccueilHead: () => import("../accueil/AdminAccueilHead.vue"),
     AdminAccueilTab: () => import("../accueil/AdminAccueilTab.vue"),
   }
 }

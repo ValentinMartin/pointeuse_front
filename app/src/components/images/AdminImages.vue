@@ -1,7 +1,7 @@
 <template>
-  <div id="content">
+  <div id="content_AdminImages">
     <navBar />
-    <p>Admin Images</p>
+    <AdminImagesForm />
   </div>
 </template>
 
@@ -12,6 +12,7 @@ export default {
   name: 'AdminImages',
   components: {
     navBar: () => import("../navbar/navBar.vue"),
+    AdminImagesForm: () =>import("../images/AdminImagesForm.vue")
   }
 }
 </script>

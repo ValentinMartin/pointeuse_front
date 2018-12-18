@@ -26,7 +26,7 @@ export default {
 #content_AdminCompte_Creation{
     width:60%;
     text-align: center;
-    margin:3rem auto;
+    margin:2rem auto;
 }
 #content_AdminCompte_Creation input,#content_AdminCompte_Creation button{
     margin: 0.5rem auto;

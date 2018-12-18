@@ -51,42 +51,6 @@ export default {
 </script>
 
 <style>
-    /* CSS GENERIQUE */
-    body{
-        background:#8080800a;
-        font-family: "Gill Sans", sans-serif;
-        margin:0;
-    }
-    input{
-        text-indent: 5px;
-        margin: 2rem 5rem 0 5rem;
-        padding: 0.4rem 0;
-        border: none;
-        border-bottom: 1px solid #8080802e;
-    }
-    .flex_container{
-        display:flex;
-    }
-    .flex_direction_column{
-        flex-direction: column;
-    }
-    button{
-        cursor: pointer;
-    }
-    .btn_logOut{
-      height: 50px;
-      padding-left: 15px;
-      padding-right: 15px;
-      color: #bb1515;
-      border: 1px solid #bb1515;
-      border-radius: 5px;
-      background: white;
-      font-weight: bolder;
-    }
-    *:focus {
-    outline: none;
-}
-    /* FIN CSS GENERIQUE */
 
 #content_login{
     width: 100%;
@@ -138,6 +102,10 @@ export default {
     text-shadow: 0px -2px #27ae60;  
     font-weight: bolder;
     font-size: 15px;  
+}
+.btn_login:active{    
+    border-bottom: 1px solid #27ae60;
+    transition: 0.5s; 
 }
 
  /* MEDIA QUERIES */

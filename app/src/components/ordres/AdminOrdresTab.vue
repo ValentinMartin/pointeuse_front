@@ -1,5 +1,5 @@
 <template>
-  <div id="content">
+  <div id="content_AdminOrdresTab">
     <p>Admin Ordres Tab</p>
   </div>
 </template>

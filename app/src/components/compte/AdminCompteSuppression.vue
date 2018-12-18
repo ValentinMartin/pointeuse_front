@@ -3,7 +3,7 @@
     <h2>Supprimer un compte</h2>
     <select name="employee">
       <option>--</option>
-      <option :key="item.emp" v-for="item in employee"> {{item.emp}} </option>
+      <option :key="item.emp" v-for="item in employee" :value="item.emp"> {{item.emp}} </option>
     </select>  
     <button type="button" v-on:click="deleteCompte()">Supprimer un compte</button>
   </div>

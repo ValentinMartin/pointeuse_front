@@ -14,7 +14,7 @@
               <datetime format="DD/MM/YYYY H:i:s" width="300px" v-model="val"></datetime>
           </div>              
       </div>
-      <button type="button" v-on:click="pointer()" id="btn_pointer_admin">Pointer</button>
+      <button v-on:click="pointer()" id="btn_pointer_admin">Pointer</button>
   </div>
 </template>
 
