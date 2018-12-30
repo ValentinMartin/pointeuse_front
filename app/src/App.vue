@@ -76,7 +76,10 @@ export default {
     }
     *:focus {
     outline: none;
-}
+    }
+    select{
+        width: auto;
+    }
     /* FIN CSS GENERIQUE */
 
 

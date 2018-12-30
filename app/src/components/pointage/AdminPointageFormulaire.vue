@@ -72,4 +72,30 @@ export default {
   font-weight: bolder;
   font-size: 15px;  
 }
+
+
+/* Modification CSS Datetime picker */
+
+.calender-div[data-v-4bd11526] {
+    min-width: 280px;
+    -webkit-box-shadow: 1px 2px 5px #ccc;
+    box-shadow: 1px 2px 5px #ccc;
+    background: #FFF;
+    position: absolute;
+    display: inline-block;
+    left: 107px;
+    top: 72px;
+    color: #444;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.nav-l[data-v-4bd11526], .nav-r[data-v-4bd11526],.year-month-wrapper[data-v-4bd11526]{
+    background-color: #fff000c9;
+}
+.days[data-v-4bd11526]{
+  color: #000000;
+}
+.month[data-v-4bd11526], .year[data-v-4bd11526],.nav-l[data-v-4bd11526], .nav-r[data-v-4bd11526]{
+    color :#444;  
+}
 </style>

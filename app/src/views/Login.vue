@@ -79,7 +79,7 @@ export default {
     font-size: 3em;
     position: relative;
     top: -3rem;
-    left: 11rem;   
+    left: 40%;   
 
 }
 #form_login{
