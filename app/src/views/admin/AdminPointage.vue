@@ -11,8 +11,8 @@
 export default {
   name: 'AdminPointage',
   components: {
-    navBar: () => import("../navbar/navBar.vue"),
-    AdminPointageFormulaire: () => import("../pointage/AdminPointageFormulaire.vue")
+    navBar: () => import("../../components/navbar/navBar.vue"),
+    AdminPointageFormulaire: () => import("../../components/pointage/AdminPointageFormulaire.vue")
   }
 }
 </script>

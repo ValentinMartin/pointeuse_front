@@ -3,8 +3,6 @@
     <nav>
         <ul>
             <li><router-link append :to="{ name: 'AdminAccueil' }">Accueil</router-link></li>
-            <li><router-link append :to="{ name: 'AdminUtilisateurs' }">Utilisateurs</router-link></li>
-            <li><router-link append :to="{ name: 'AdminOrdres' }">Ordres</router-link></li>
             <li><router-link append :to="{ name: 'AdminCarte' }">Carte</router-link></li>
             <li><router-link append :to="{ name: 'AdminPointage' }">Pointage</router-link></li>
             <li><router-link append :to="{ name: 'AdminCompte' }">Compte</router-link></li>

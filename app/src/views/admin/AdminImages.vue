@@ -11,8 +11,8 @@
 export default {
   name: 'AdminImages',
   components: {
-    navBar: () => import("../navbar/navBar.vue"),
-    AdminImagesForm: () =>import("../images/AdminImagesForm.vue")
+    navBar: () => import("../../components/navbar/navBar.vue"),
+    AdminImagesForm: () =>import("../../components/images/AdminImagesForm.vue")
   }
 }
 </script>

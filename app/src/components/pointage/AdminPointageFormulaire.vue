@@ -73,7 +73,6 @@ export default {
   font-size: 15px;  
 }
 
-
 /* Modification CSS Datetime picker */
 
 .calender-div[data-v-4bd11526] {

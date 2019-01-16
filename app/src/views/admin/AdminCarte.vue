@@ -12,8 +12,8 @@
 export default {
   name: 'AdminCarte',
   components: {
-    navBar: () => import("../navbar/navBar.vue"),
-    AdminCarteMap: () => import("../carte/AdminCarteMap.vue")
+    navBar: () => import("../../components/navbar/navBar.vue"),
+    AdminCarteMap: () => import("../../components/carte/AdminCarteMap.vue")
   }
 }
 </script>
