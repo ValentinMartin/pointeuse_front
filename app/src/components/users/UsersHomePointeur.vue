@@ -8,7 +8,7 @@
             <button v-on:click="deplacer()" id="btn_deplacer">Déplacer</button>
         </div>
     </div>
- </template>
+</template>
 
 <script>
 export default {
